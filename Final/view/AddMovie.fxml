@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="controller.AddMovieController"
+      alignment="center" spacing="10"
+      styleClass="root"
+      prefWidth="800.0"
+>
+<HBox alignment="CENTER_LEFT">
+	<ImageView>
+    <image>
+        <Image url="@movie_icon.png"/>
+    </image>
+	</ImageView>
+
+    <Label text="Add Movie" styleClass="h1"/>
+    
+</HBox>
+
+<GridPane alignment="CENTER" hgap="10" vgap="10">
+<Label text="Title:" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+<TextField fx:id="titleName" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+<Label text="Year:" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+<TextField fx:id="yearName" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+<Label text="Genre:" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+<TextField fx:id="genreName" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+<Label text="Price:" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+<TextField fx:id="priceName" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+</GridPane>
+
+<HBox alignment="CENTER">
+	<Text fx:id="addmovieText"/>
+</HBox>
+
+<HBox alignment="CENTER">
+	<Button text="Add Movie" fx:id="addMovie" onAction="#addMovie"/>
+</HBox>
+
+<HBox alignment="CENTER">
+	<Button text="Exit" fx:id="quit" onAction="#close"/>
+</HBox>
+
+    <stylesheets>
+        <URL value="@kiosk.css"/>
+    </stylesheets>
+
+</VBox>

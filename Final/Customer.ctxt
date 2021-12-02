@@ -1,0 +1,27 @@
+#BlueJ class context
+comment0.target=Customer
+comment1.params=ID\ name\ balance
+comment1.target=Customer(int,\ java.lang.String,\ int)
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Customer\r\n
+comment10.params=y
+comment10.target=void\ Records(int)
+comment10.text=\r\n\ An\ example\ of\ a\ method\ -\ replace\ this\ comment\ with\ your\ own\r\n\r\n\ @param\ \ y\ \ a\ sample\ parameter\ for\ a\ method\r\n\ @return\ \ \ \ the\ sum\ of\ x\ and\ y\r\n
+comment11.params=
+comment11.target=java.lang.String\ toString()
+comment2.params=
+comment2.target=int\ getId()
+comment3.params=
+comment3.target=java.lang.String\ getName()
+comment4.params=
+comment4.target=int\ getBalance()
+comment5.params=amount
+comment5.target=void\ changedBalance(int)
+comment6.params=savedMovie
+comment6.target=void\ saveRented(Movie)
+comment7.params=
+comment7.target=void\ listrentedMovie()
+comment8.params=
+comment8.target=void\ listrentedHistory()
+comment9.params=savedMovie
+comment9.target=void\ removeRented(Movie)
+numComments=12
