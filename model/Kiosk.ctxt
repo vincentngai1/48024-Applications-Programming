@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=Kiosk
+comment1.params=
+comment1.target=Kiosk()
+comment2.params=id\ name\ balance
+comment2.target=void\ addCustomer(int,\ java.lang.String,\ int)
+comment3.params=customer\ topUpAmount
+comment3.target=void\ topUpAccount(Customer,\ int)
+comment4.params=
+comment4.target=javafx.collections.ObservableList\ getCustomers()
+comment5.params=id
+comment5.target=Customer\ getCustomer(int)
+comment6.params=customer
+comment6.target=void\ removeCustomer(Customer)
+comment7.params=
+comment7.target=Catalogue\ getCatalogue()
+numComments=8

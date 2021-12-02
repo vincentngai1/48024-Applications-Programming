@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=KioskController
+comment1.params=
+comment1.target=void\ initialize()
+comment2.params=
+comment2.target=model.Kiosk\ getKiosk()
+comment3.params=
+comment3.target=model.Catalogue\ getCatalogue()
+comment4.params=
+comment4.target=void\ Admin()
+comment5.params=
+comment5.target=void\ Catalogue()
+comment6.params=
+comment6.target=void\ customerRecord()
+comment7.params=
+comment7.target=void\ topUp()
+comment8.params=
+comment8.target=void\ favouriteMovies()
+comment9.params=
+comment9.target=void\ close()
+numComments=10
