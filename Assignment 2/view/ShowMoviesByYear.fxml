@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.cell.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="controller.ShowMoviesByYearController"
+      alignment="center" spacing="10"
+      styleClass="root"
+      prefWidth="800.0"
+>
+<HBox alignment="CENTER_LEFT">
+	<ImageView>
+    <image>
+        <Image url="@movie_icon.png"/>
+    </image>
+	</ImageView>
+
+    <Label text="Movies by Year" styleClass="h1"/>
+    
+</HBox>
+
+<HBox alignment="CENTER_LEFT" spacing="10">
+
+<VBox alignment="CENTER_LEFT" spacing="10">
+<Label text="Years:" styleClass="h2"/>
+<ListView fx:id="listbyYear" items="${controller.catalogue.Years}"  prefWidth="200">
+	<placeholder>
+		<Label text="No results found."/>
+	</placeholder>
+</ListView>
+</VBox>
+<VBox alignment="CENTER_LEFT" spacing="10">
+<Label text="Movies:" styleClass="h2"/>
+<TableView fx:id="tablebyYear" prefWidth="600">
+	<placeholder>
+	<Label text="No results found."/>
+	</placeholder>
+	<columns>
+	<TableColumn text="Title">
+		<cellValueFactory>
+			<PropertyValueFactory property="title"/>
+		</cellValueFactory>
+	</TableColumn>
+	<TableColumn text="Year">
+		<cellValueFactory>
+			<PropertyValueFactory property="year"/>
+		</cellValueFactory>
+	</TableColumn>
+	<TableColumn text="Genre">
+		<cellValueFactory>
+			<PropertyValueFactory property="Genre"/>
+		</cellValueFactory>
+	</TableColumn>
+	<TableColumn text="Price">
+		<cellValueFactory>
+			<PropertyValueFactory property="price"/>
+		</cellValueFactory>
+	</TableColumn>
+	</columns>
+</TableView>
+</VBox>
+</HBox>
+<HBox alignment="CENTER_LEFT" spacing="10">
+	<Button text="Display Movies" fx:id="displayMovie" onAction="#listMovie"/>
+</HBox>
+
+<HBox alignment="CENTER">
+	<Button text="Exit" fx:id="quit" onAction="#close"/>
+</HBox>
+
+    <stylesheets>
+        <URL value="@kiosk.css"/>
+    </stylesheets>
+
+</VBox>
